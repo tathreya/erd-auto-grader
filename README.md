@@ -1,20 +1,23 @@
 
 # ERD Auto Grader Project
 
+Automated grading system for Entity-Relationship Diagrams (ERDs) using YOLOv8 for object detection, EasyOCR for text extraction, and SBERT for similarity-based matching. Built to streamline TA workflows by reducing manual grading time.
+
 Members:
 
 Tanay Athreya, Nitin Nallagatla, and Samhitha Mupharaphu
 
 This is the README for instructions on how to run our project. 
 
-## Stage 1 Code (Object Detection + OCR):
 
-We attached weights for our Object Detection Model in the submission for our code. Our Stage 1 Code is in a .ipynb notebook in Google Colab called CS473_ObjectDetection_OCR.ipynb
+## Object Detection & OCR Code:
 
-To run our Stage 1 Code, you can run the notebook from top to bottom, but you will have to change file paths to point to the correct paths for images folders and the weights which we provided. We used google drive for our file repo. 
+There are final weights for the object detection code using YOLOV8. The code to train the object detection and test it on images is in the .ipynb notebook called CS473_ObjectDetection_OCR.ipynb
+
+To run the code, you can run the notebook from top to bottom, but you will have to change file paths to point to the correct paths for images folders and the weights which we provided.
 
 
-## Stage 2 Code (Prediction Model given Stage 1 output):
+## Prediction Model using SBERT and Feature Engineering:
 
-To run our Stage 2 Code, you must run the notebook from top to bottom since methods 2 and 3 depend on lines in method 1. Again, you will have to change the file paths for the files that are in Google Drive. 
+To run our prediction model using the results from object detection and OCR, run the notebook from top to bottom, you will have to change the file paths for the files that are in Google Drive. 
 
